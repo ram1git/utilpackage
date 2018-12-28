@@ -1,12 +1,16 @@
 package utilpackage;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
 import java.util.TreeSet;
+
+import javax.swing.text.html.HTMLDocument.Iterator;
 
 import org.testng.annotations.Test;
 
@@ -140,6 +144,44 @@ System.out.println(l2);
 		
 		
 	}
+	
+	@Test(priority=6)
+	
+	public void hashtabeltest6(){
+		
+		HashMap<String,String>hm=new HashMap<String,String>();
+		hm.put("username-password1", "ananth1-ananth1@yahoo.com");
+		hm.put("username-password2", "ananth2-ananth1@yahoo.com");
+		hm.put("username-password3", "ananth3-ananth1@yahoo.com");
+		hm.put("username-password4", "ananth4-ananth1@yahoo.com");
+		hm.put("username-password5", "ananth5-ananth1@yahoo.com");
+		hm.put("username-password6", "ananth6-ananth1@yahoo.com");
+		hm.put("username-password7", "ananth7-ananth1@yahoo.com");
+		hm.put("username-password8", "ananth8-ananth1@yahoo.com");
+		hm.put("username-password9", "ananth9-ananth1@yahoo.com");
+		hm.put("username-password10", "ananth10-ananth1@yahoo.com");
+		hm.put("username-password11", "ananth11-ananth1@yahoo.com");
+		
+		System.out.println(hm);
+		
+	System.out.println(hm.get("username-password1"));
+	
+	
+	for(int i=0;i<hm.size();i++){
+		
+Collection<String>co=hm.values();
+java.util.Iterator<String> it=co.iterator();
+String name=it.next();
+String[] names=name.split("-");
+System.out.println(names[0]);
+System.out.println(names[1]);
+
+		
+	}
+		
+	}
+	
+	
 	}
 
 
