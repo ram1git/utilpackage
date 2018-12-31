@@ -7,6 +7,7 @@ import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -176,12 +177,48 @@ String[] names=name.split("-");
 System.out.println(names[0]);
 System.out.println(names[1]);
 
+System.out.println("hello");
+
 		
 	}
 		
 	}
 	
 	
+	
+	@Test(priority=7)
+	
+	
+	public void test7(){
+		
+	Map<String,String>map=new HashMap<String,String>();	
+	map.put("india", "delhi");
+	map.put("karnataka", "delhi1");
+	map.put("india", "bangalore");
+	map.put("orissa", "bhubaneshwar");
+	map.put("tamilnadu", "chennai");
+	map.put("uttar pradesh", "lucknow");
+	map.put("madhya pradesh", "bhopal");
+	map.put("west bengal", "kolkatta");
+	map.put("gujurath", "ahmedabad");
+	map.put("telengana", "hyderabad");
+	map.put("andhra pradesh", "amaravathi");
+	
+	System.out.println(map);
+	
+Set<String>s=map.keySet();
+java.util.Iterator<String> ig=s.iterator();
+
+while(ig.hasNext()){
+System.out.println(ig.next());
+}
+
+	
+}
+	
+		
 	}
+	
+	
 
 
